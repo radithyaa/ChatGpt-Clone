@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baking with the Gemini API</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-[#212121] text-[#ECECEC] font-sans h-screen w-screen flex justify-center">
+  <main class="flex flex-col justify-between content-center w-2/4 h-full bg-red-500">
+    <p class="output"></p>
+    <form>
+      <div class="prompt-box bg-[#2F2F2F] w-full rounded-full py-4 px-4 flex justify-between mb-4 text-white">
+        <label>
+          <input name="prompt" placeholder="How are you?" type="text" class="bg-transparent active:border-none">
+        </label>
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
