@@ -4,23 +4,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baking with the Gemini API</title>
+  <title>AhzaGpt</title>
   <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body class="bg-[#212121] text-[#ECECEC] font-sans h-screen w-screen flex justify-center">
-  <main class="flex flex-col justify-between content-center w-2/4 h-full bg-red-500">
-    <p class="output"></p>
-    <form>
-      <div class="prompt-box bg-[#2F2F2F] w-full rounded-full py-4 px-4 flex justify-between mb-4 text-white">
-        <label>
-          <input name="prompt" placeholder="How are you?" type="text" class="bg-transparent active:border-none">
-        </label>
-        <button type="submit">Go</button>
-      </div>
-    </form>
-    
+<body class="font-sans bg-[#212121] w-screen h-screen flex flex-col text-white overflow-x-hidden">
+  <main class="w-[700px] mx-auto text-lg pt-12">
+    <div class="relative flex content-center justify-center image top-36">
+      <img src="src/visualhunter-a1bf6d3746.png" width="100px">
+    </div>
+    <div class="flex w-full justify-end">
+      <div class="input bg-[#2F2F2F] max-w-[650px] rounded-3xl  p-4 hidden my-4"></div>
+    </div>
+    <div class="flex w-full justify-start">
+      <div class="output bg-[#2F2F2F] max-w-[650px] rounded-3xl  p-4 hidden my-4 mb-32"></div>
+    </div>
   </main>
+  <form
+    class="fixed mx-auto prompt-box bg-[#2f2f2f] rounded-full right-1/2 translate-x-1/2 bottom-8 w-[800px] flex justify-between px-3 py-3 text-center pl-8 text-white">
+    <input name="prompt" placeholder="Message AhzaGpt" type="text" autocomplete="off"
+      class="w-full bg-transparent rounded-full focus:outline-none placeholder:text-[#B9B3A9] text-lg">
+    <button type="submit" class=" bg-[#4E5457] rounded-full w-10 h-10 ">
+      <span class="relative top-0.5 text-3xl material-symbols-outlined">keyboard_arrow_up</span>
+    </button>
+    </div>
+  </form>
 
   <script type="module" src="/main.js"></script>
 </body>
