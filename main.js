@@ -20,7 +20,7 @@ form.onsubmit = async (ev) => {
   // Tampilkan input pengguna di chat
   wrap.innerHTML += `
     <div class="inputdiv gap-4 w-full justify-end flex">
-      <div class="order-2 mt-5 rounded-full bg-[#1ABC9C] border border-[#ffffff7a] h-10 w-10 text-xl font-semibold flex items-center justify-center text-center">
+      <div class="order-2 mt-5 rounded-full bg-[#1ABC9C] border border-[#ffffff7a] h-10 w-10 text-xl font-semibold flex items-center justify-center text-center select-none">
         A
       </div>
       <div class="order-1 input bg-[#2F2F2F] max-w-[650px] rounded-3xl p-4 my-3">${promptInput.value}</div>
@@ -54,13 +54,13 @@ form.onsubmit = async (ev) => {
 
       wrap.innerHTML += `
         <div class="outputdiv w-full justify-start gap-4 flex">
-          <img src="src/visualhunter-a1bf6d3746.png" alt="Gpt Logo" class="h-11 rounded-full border-[#ffffff52] border mt-5">
-          <div class="output bg-[#2F2F2F] max-w-[650px] rounded-3xl p-4 my-3 mb-32">${md.render(
+          <img src="src/visualhunter-a1bf6d3746.png" alt="Gpt Logo" class="h-11 rounded-full border-[#ffffff52] border mt-5 select-none">
+          <div class="output bg-[#2F2F2F] max-w-[650px] rounded-3xl p-4 my-3">${md.render(
             buffer.join("")
           )}</div>
         </div>`;
     }
   } catch (e) {
-    wrap.innerHTML += `<div class="error">Error: Couldn't get data</div>`;
+    wrap.innerHTML += `<div class="error">Error</div>`;
   }
 };
