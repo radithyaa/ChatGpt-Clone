@@ -11,28 +11,28 @@
 </head>
 
 <body class="font-sans bg-[#212121] w-screen h-screen flex flex-col text-white overflow-x-hidden">
-  <main class="w-[700px] mx-auto text-lg pt-12">
+
+  <main class="wrap w-[770px] mx-auto text-lg pt-12">
+    <!-- Image Section -->
     <div class="relative flex content-center justify-center image top-36">
       <img src="src/visualhunter-a1bf6d3746.png" width="100px">
     </div>
-    <div class="flex w-full justify-end">
-      <div class="input bg-[#2F2F2F] max-w-[650px] rounded-3xl  p-4 hidden my-4"></div>
-    </div>
-    <div class="flex w-full justify-start">
-      <div class="output bg-[#2F2F2F] max-w-[650px] rounded-3xl  p-4 hidden my-4 mb-32"></div>
-    </div>
   </main>
+
+  <!-- Form Section -->
   <form
-    class="fixed mx-auto prompt-box bg-[#2f2f2f] rounded-full right-1/2 translate-x-1/2 bottom-8 w-[800px] flex justify-between px-3 py-3 text-center pl-8 text-white">
+    class="fixed mx-auto prompt-box bg-[#2f2f2f] rounded-full right-1/2 translate-x-1/2 bottom-8 w-full min-w-[500px] max-w-[900px] flex justify-between px-3 py-3 text-center pl-8 text-white hover:bg-[#313131] ">
     <input name="prompt" placeholder="Message AhzaGpt" type="text" autocomplete="off"
       class="w-full bg-transparent rounded-full focus:outline-none placeholder:text-[#B9B3A9] text-lg">
-    <button type="submit" class=" bg-[#4E5457] rounded-full w-10 h-10 ">
+    <button type="submit"
+      class="bg-[#4E5457] rounded-full w-10 h-10 hover:bg-white hover:text-black transition-colors duration-150">
       <span class="relative top-0.5 text-3xl material-symbols-outlined">keyboard_arrow_up</span>
     </button>
-    </div>
   </form>
 
+  <!-- Script Section -->
   <script type="module" src="/main.js"></script>
+
 </body>
 
 </html>
